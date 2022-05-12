@@ -2,6 +2,6 @@
 
 <p>
 	Visit
-	<a href="https://kit.svelte.dev">kit.svelte.dev</a>
+	<a class="font-semibold" href="https://kit.svelte.dev">kit.svelte.dev</a>
 	to read the documentation
 </p>
