@@ -1,5 +1,8 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
+
+// More information on adapter-static
+// https://kit.svelte.dev/docs/adapters#supported-environments-static-sites
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +11,9 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			fallback: '200.html'
+		})
 	}
 };
 
